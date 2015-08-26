@@ -23,11 +23,13 @@ namespace ContosoUniversity.Controllers
             var students = from s in db.Students
                            select s;
 
+            // function for search of students by first or second name
             if (!String.IsNullOrEmpty(searchString))
             {
                 students = students.Where(s => s.LastName.Contains(searchString) || s.FirstMidName.Contains(searchString));
             }
 
+            // function for sorting students by name and enrollment date
             switch (sortOrder)
             {
                 case "name_desc":
