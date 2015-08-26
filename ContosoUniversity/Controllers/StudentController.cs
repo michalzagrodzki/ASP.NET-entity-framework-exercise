@@ -26,6 +26,7 @@ namespace ContosoUniversity.Controllers
             var students = from s in db.Students
                            select s;
 
+            // function for pagination
             if ( searchString != null)
             {
                 page = 1;
@@ -60,6 +61,7 @@ namespace ContosoUniversity.Controllers
                     break;
             }
 
+            // function for pagination
             int pageSize = 4;
             int pageNumber = ( page ?? 1 );
             return View(students.ToPagedList( pageNumber, pageSize ));

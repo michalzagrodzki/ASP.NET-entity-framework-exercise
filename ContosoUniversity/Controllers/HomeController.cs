@@ -12,11 +12,13 @@ namespace ContosoUniversity.Controllers
     {
         private SchoolContext db = new SchoolContext();
 
+        // GET: Home Page
         public ActionResult Index()
         {
             return View();
         }
 
+        // GET: About Page
         public ActionResult About()
         {
             IQueryable<EnrollmentDateGroup> data = from student in db.Students
@@ -29,6 +31,7 @@ namespace ContosoUniversity.Controllers
             return View(data.ToList());
         }
 
+        // GET: Contact Page
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
