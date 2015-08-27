@@ -156,6 +156,14 @@
     <Compile Include="Migrations\201508271352257_MaximumLengthOnNames.Designer.cs">
       <DependentUpon>201508271352257_MaximumLengthOnNames.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201508271354367_ChangeColumnFirstName.cs" />
+    <Compile Include="Migrations\201508271354367_ChangeColumnFirstName.Designer.cs">
+      <DependentUpon>201508271354367_ChangeColumnFirstName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201508271414304_RequirementsAndDisplayNamesForStudent.cs" />
+    <Compile Include="Migrations\201508271414304_RequirementsAndDisplayNamesForStudent.Designer.cs">
+      <DependentUpon>201508271414304_RequirementsAndDisplayNamesForStudent.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Course.cs" />
     <Compile Include="Models\Enrollment.cs" />
@@ -222,6 +230,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201508271352257_MaximumLengthOnNames.resx">
       <DependentUpon>201508271352257_MaximumLengthOnNames.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201508271354367_ChangeColumnFirstName.resx">
+      <DependentUpon>201508271354367_ChangeColumnFirstName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201508271414304_RequirementsAndDisplayNamesForStudent.resx">
+      <DependentUpon>201508271414304_RequirementsAndDisplayNamesForStudent.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
