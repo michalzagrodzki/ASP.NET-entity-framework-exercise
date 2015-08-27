@@ -164,8 +164,13 @@
     <Compile Include="Migrations\201508271414304_RequirementsAndDisplayNamesForStudent.Designer.cs">
       <DependentUpon>201508271414304_RequirementsAndDisplayNamesForStudent.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201508271837180_UpdateDataModel.cs" />
+    <Compile Include="Migrations\201508271837180_UpdateDataModel.Designer.cs">
+      <DependentUpon>201508271837180_UpdateDataModel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Course.cs" />
+    <Compile Include="Models\Department.cs" />
     <Compile Include="Models\Enrollment.cs" />
     <Compile Include="Models\Instructor.cs" />
     <Compile Include="Models\OfficeAssignment.cs" />
@@ -238,6 +243,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201508271414304_RequirementsAndDisplayNamesForStudent.resx">
       <DependentUpon>201508271414304_RequirementsAndDisplayNamesForStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201508271837180_UpdateDataModel.resx">
+      <DependentUpon>201508271837180_UpdateDataModel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
