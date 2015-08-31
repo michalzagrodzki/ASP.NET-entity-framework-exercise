@@ -141,6 +141,10 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\InstructorController.cs" />
     <Compile Include="Controllers\StudentController.cs" />
+    <Compile Include="Migrations\201508311227072_DepartmentStoredProcedures.cs" />
+    <Compile Include="Migrations\201508311227072_DepartmentStoredProcedures.Designer.cs">
+      <DependentUpon>201508311227072_DepartmentStoredProcedures.cs</DependentUpon>
+    </Compile>
     <Compile Include="ViewModels\AssignedCourseData.cs" />
     <Compile Include="DAL\SchoolConfiguration.cs" />
     <Compile Include="DAL\SchoolContext.cs" />
@@ -266,6 +270,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201508271837180_UpdateDataModel.resx">
       <DependentUpon>201508271837180_UpdateDataModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201508311227072_DepartmentStoredProcedures.resx">
+      <DependentUpon>201508311227072_DepartmentStoredProcedures.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
