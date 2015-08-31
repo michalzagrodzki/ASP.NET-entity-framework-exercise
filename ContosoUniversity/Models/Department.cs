@@ -18,9 +18,11 @@ namespace ContosoUniversity.Models
 
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
+
         [Display(Name = "Start Date")]
         public DateTime StartDate { get; set; }
 
+        [Display(Name = "Administrator")]
         public int? InstructorID { get; set; }
 
         public virtual Instructor Administrator { get; set; }
