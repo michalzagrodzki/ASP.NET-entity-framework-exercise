@@ -149,6 +149,11 @@
     <Compile Include="Migrations\201508311433370_RowVersion.Designer.cs">
       <DependentUpon>201508311433370_RowVersion.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201508311905029_PersonInheritance.cs" />
+    <Compile Include="Migrations\201508311905029_PersonInheritance.Designer.cs">
+      <DependentUpon>201508311905029_PersonInheritance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Person.cs" />
     <Compile Include="ViewModels\AssignedCourseData.cs" />
     <Compile Include="DAL\SchoolConfiguration.cs" />
     <Compile Include="DAL\SchoolContext.cs" />
@@ -280,6 +285,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201508311433370_RowVersion.resx">
       <DependentUpon>201508311433370_RowVersion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201508311905029_PersonInheritance.resx">
+      <DependentUpon>201508311905029_PersonInheritance.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
