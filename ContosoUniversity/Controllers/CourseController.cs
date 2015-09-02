@@ -152,6 +152,23 @@ namespace ContosoUniversity.Controllers
             return RedirectToAction("Index");
         }
 
+        // GET: Change course credits
+        public ActionResult UpdateCourseCredits()
+        {
+            return View();
+        }
+
+        // POST: Change course credits
+        [HttpPost]
+        public ActionResult UpdateCourseCredits(int? multiplier)
+        {
+            if (multiplier != null)
+            {
+                ViewBag.RowsAffected = db.Database.ExecuteSqlCommand("UPDATE Course SET Credits = Credits * {0}", multiplier);
+            }
+            return View();
+        }
+
         protected override void Dispose(bool disposing)
         {
             if (disposing)
